@@ -33,3 +33,15 @@ train:
   outs:
   - path: model.pkl
     md5: ebd24ca55feb3707b0f44d0269739b1e
+evaluate:
+  cmd: python src/evaluate.py model.pkl data/features auc.json
+  deps:
+  - path: data/features
+    md5: 703b744b08c7d5c7ad3fdef4a69c6def.dir
+  - path: model.pkl
+    md5: ebd24ca55feb3707b0f44d0269739b1e
+  - path: src/evaluate.py
+    md5: fea9c7bb1242b5e43d682c5d43e7c1d1
+  outs:
+  - path: auc.json
+    md5: 2531e18bb924968943718aebfa193a2e
