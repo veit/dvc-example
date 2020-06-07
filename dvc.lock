@@ -23,3 +23,13 @@ featurize:
   outs:
   - path: data/features
     md5: 703b744b08c7d5c7ad3fdef4a69c6def.dir
+train:
+  cmd: python src/train.py data/features model.pkl
+  deps:
+  - path: data/features
+    md5: 703b744b08c7d5c7ad3fdef4a69c6def.dir
+  - path: src/train.py
+    md5: 999db74263dccc2798804478d5dea37e
+  outs:
+  - path: model.pkl
+    md5: ebd24ca55feb3707b0f44d0269739b1e

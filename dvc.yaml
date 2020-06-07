@@ -17,3 +17,10 @@ stages:
     - ngram_range.hi
     outs:
     - data/features
+  train:
+    cmd: python src/train.py data/features model.pkl
+    deps:
+    - data/features
+    - src/train.py
+    outs:
+    - model.pkl
