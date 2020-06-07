@@ -8,3 +8,18 @@ split:
   outs:
   - path: data/splitted
     md5: 1ce9051bf386e57c03fe779d476d93e7.dir
+featurize:
+  cmd: python src/featurization.py data/splitted data/features
+  deps:
+  - path: data/splitted
+    md5: 1ce9051bf386e57c03fe779d476d93e7.dir
+  - path: src/featurization.py
+    md5: a56570e715e39134adb4fdc779296373
+  params:
+    params.yaml:
+      max_features: 6000
+      ngram_range.hi: 2
+      ngram_range.lo: 1
+  outs:
+  - path: data/features
+    md5: 703b744b08c7d5c7ad3fdef4a69c6def.dir

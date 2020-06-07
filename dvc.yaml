@@ -6,3 +6,14 @@ stages:
     - src/split.py
     outs:
     - data/splitted
+  featurize:
+    cmd: python src/featurization.py data/splitted data/features
+    deps:
+    - data/splitted
+    - src/featurization.py
+    params:
+    - max_features
+    - ngram_range.lo
+    - ngram_range.hi
+    outs:
+    - data/features
