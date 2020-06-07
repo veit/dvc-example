@@ -31,7 +31,6 @@ release = '0.1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'nbsphinx',
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.graphviz',
@@ -123,11 +122,6 @@ latex_documents = [
     (master_doc, 'dvc-example.tex', 'DVC-Example',
      'Veit Schiele', 'manual'),
 ]
-
-# -- nbsphinx configuration --------------------------------------------------
-
-nbsphinx_allow_errors = True
-# nbsphinx_execute = 'always'
 
 # -- intersphinx configuration -----------------------------------------------
 
