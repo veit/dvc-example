@@ -1,0 +1,10 @@
+split:
+  cmd: python src/split.py data/data.xml
+  deps:
+  - path: data/data.xml
+    md5: a304afb96060aad90176268345e10355
+  - path: src/split.py
+    md5: ffa32f4104c363040f27d2bd22db127d
+  outs:
+  - path: data/splitted
+    md5: 1ce9051bf386e57c03fe779d476d93e7.dir

@@ -1,0 +1,8 @@
+stages:
+  split:
+    cmd: python src/split.py data/data.xml
+    deps:
+    - data/data.xml
+    - src/split.py
+    outs:
+    - data/splitted
