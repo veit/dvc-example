@@ -1,5 +1,5 @@
-Schnelleinstieg
-===============
+Quick start
+===========
 
 |Contributors| |License| |Docs|
 
@@ -13,7 +13,7 @@ Schnelleinstieg
 Installation
 ------------
 
-#. Herunterladen und Auspacken:
+#. Download and unpack:
 
    .. code-block:: console
 
@@ -24,7 +24,7 @@ Installation
        creating: dvc-example-master/
     …
 
-#. HTML-Dokumentation erstellen:
+#. Create HTML documentation:
 
    .. code-block:: console
 
@@ -33,17 +33,17 @@ Installation
     $ bin/python -m pip install -r requirements.txt
     $ bin/sphinx-build -ab html docs/ docs/_build/
 
-#. PDF erstellen:
+#. Create PDF:
 
-   Für die Erstellung von PDFs benötigt ihr weitere Pakete.
+   To create PDFs you need additional packages.
 
-   Für Debian/Ubuntu erhaltet ihr diese mit:
+   For Debian/Ubuntu you can get them with:
 
    .. code-block:: console
 
     $ apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
 
-   oder für Mac OS X mit:
+   or for Mac OS X with:
 
    .. code-block:: console
 
@@ -56,7 +56,7 @@ Installation
     mktexlsr: Updating /usr/local/texlive/2020/texmf-dist/ls-R...
     mktexlsr: Done.
 
-   Anschließend könnt ihr ein PDF generieren mit:
+   You can then generate a PDF with:
 
    .. code-block:: console
 
@@ -67,21 +67,20 @@ Installation
     Run 'make' in that directory to run these through (pdf)latex
     …
 
-   Das PDF findet ihr anschließend in ``docs/_build/latex/dvc-example.pdf``.
+   You will then find the PDF in :file:`docs/_build/latex/dvc-example.pdf`.
 
-Folge uns
+Follow us
 ---------
 
 * `GitHub <https://github.com/veit/dvc-example>`_
-* `Twitter <https://twitter.com/VeitSchiele>`_
+* `Twitter <https://twitter.com/JupyterTutorial>`_
+* `Mastodon <https://mastodon.social/@JupyterTutorial>`_
 
-Pull-Requests
+Pull requests
 -------------
 
-Wenn ihr Vorschläge für Verbesserungen und Ergänzungen habt, empfehle ich euch,
-einen `Fork <https://github.com/veit/dvc-example/fork>`_ meines
-`GitHub-Repository <https://github.com/veit/dvc-example/>`_ zu erstellen
-und darin eure Änderungen vorzunehmen. Gerne dürft ihr auch einen *Pull Request*
-stellen. Sofern die darin enthaltenen Änderungen klein und atomar sind, schaue ich
-mir eure Vorschläge gerne an.
-
+If you have suggestions for improvements and additions, I recommend you, create a `Fork
+<https://github.com/veit/dvc-example/fork>`_ of my GitHub repository
+<https://github.com/veit/dvc-example/>`_ and make your changes in it. You are also
+welcome to make a *Pull request* if you like. As long as the changes in it are small and
+atomic, I’m happy to look at your your suggestions with pleasure.

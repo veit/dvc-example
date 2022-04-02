@@ -1,12 +1,12 @@
 ===========
-DVC-Example
+DVC example
 ===========
 
-:doc:`DVC <jupyter-tutorial:productive/dvc/index>` erleichtert die systematische
-Organisation der Modellentwicklung für maschinelles Lernen (ML). Dieses Beispiel versucht
-zu verdeutlichen, wie Ihr Euer Modell mit Parametrisierung verbessern könnt, sobald
-mehr Trainingsdaten zur Verfügung stehen. Das Beispiel zeigt auch, wie Ihr die
-Verbesserungen nachvollziehbar messen könnt.
+:doc:`DVC <jupyter-tutorial:productive/dvc/index>` facilitates the systematic
+organisation of model development for machine learning (ML). This example tries to
+illustrate how you can improve your model with parameterisation as more training data
+becomes available. The example also shows how you can measure the improvements in a
+comprehensible way.
 
 .. toctree::
     :hidden:
@@ -19,4 +19,3 @@ Verbesserungen nachvollziehbar messen könnt.
    * :ref:`genindex`
    * :ref:`modindex`
    * :ref:`search`
-
