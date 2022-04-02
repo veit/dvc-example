@@ -65,28 +65,14 @@ exclude_patterns = [
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+html_theme = 'furo'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {
-    'description': 'Beispiel für die Nutzung von DVC in einem ML-Projekt.',
-    'fixed_sidebar': False,
-    'show_powered_by': False,
-    'github_user': 'veit',
-    'github_repo': 'dvc-example',
-    'github_banner': False,
-    'github_button': False,
-    'show_related': True,
-    'show_relbar_bottom': True,
-    'sidebar_includehidden': True,
-}
-
-html_sidebars = {
-    '**':    ['about.html', 'searchbox.html', 'navigation.html']
-}
+# html_theme_options = {}
+# html_sidebars = {}
 
 # Change default HTML title
 html_title = 'DVC-Example 0.1.0'
