@@ -112,7 +112,7 @@ latex_documents = [
 # -- intersphinx configuration -----------------------------------------------
 
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
+    'jupyter-tutorial': ('https://jupyter-tutorial.readthedocs.io/de/latest/', None),
 }
 
 def setup(app):
