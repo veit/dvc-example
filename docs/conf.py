@@ -120,7 +120,7 @@ latex_documents = [
 # -- intersphinx configuration -----------------------------------------------
 
 intersphinx_mapping = {
-    'jupyter-tutorial': ('https://jupyter-tutorial.readthedocs.io/de/latest/', None),
+    'Python4DataScience': ('https://www.python4data.science/en/latest/', None),
 }
 
 def setup(app):
