@@ -2,3 +2,5 @@
     remote = local
 ['remote "local"']
     url = /Users/veit/dvc-storage
+['remote "webserver"']
+    url = https://dvc.cusy.io/dvc-example
