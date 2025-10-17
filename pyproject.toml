@@ -7,7 +7,9 @@ authors = [
     { name = "veit", email = "veit@cusy.io" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "dvc",
+]
 
 [project.scripts]
 dvc-example = "dvc_example:main"
