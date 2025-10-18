@@ -1,0 +1,11 @@
+stages:
+  prepare:
+    cmd: uv run python src/dvc_example/prepare.py data/data.xml
+    deps:
+    - data/data.xml
+    - src/dvc_example/prepare.py
+    params:
+    - prepare.seed
+    - prepare.split
+    outs:
+    - data/prepared
