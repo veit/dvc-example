@@ -20,3 +20,14 @@ stages:
     - featurize.ngrams
     outs:
     - data/features
+  train:
+    cmd: uv run python src/dvc_example/train.py data/features model.pkl
+    deps:
+    - data/features
+    - src/dvc_example/train.py
+    params:
+    - train.min_split
+    - train.n_est
+    - train.seed
+    outs:
+    - model.pkl

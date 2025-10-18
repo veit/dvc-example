@@ -44,3 +44,25 @@ stages:
       md5: 820664b8b793837e74ea3a5d334eb85c.dir
       size: 1556292
       nfiles: 2
+  train:
+    cmd: uv run python src/dvc_example/train.py data/features model.pkl
+    deps:
+    - path: data/features
+      hash: md5
+      md5: 820664b8b793837e74ea3a5d334eb85c.dir
+      size: 1556292
+      nfiles: 2
+    - path: src/dvc_example/train.py
+      hash: md5
+      md5: 324001573ed724e5ae092226fcf9ca30
+      size: 1666
+    params:
+      params.yaml:
+        train.min_split: 0.01
+        train.n_est: 50
+        train.seed: 20170428
+    outs:
+    - path: model.pkl
+      hash: md5
+      md5: bdf0af39a42bd3fa2642eab858c45e16
+      size: 1855076
