@@ -21,3 +21,26 @@ stages:
       md5: 153aad06d376b6595932470e459ef42a.dir
       size: 8437363
       nfiles: 2
+  featurize:
+    cmd: uv run python src/dvc_example/featurization.py data/prepared
+      data/features
+    deps:
+    - path: data/prepared
+      hash: md5
+      md5: 153aad06d376b6595932470e459ef42a.dir
+      size: 8437363
+      nfiles: 2
+    - path: src/dvc_example/featurization.py
+      hash: md5
+      md5: e22789fc9581cad11ef7a6fa3aa3f17b
+      size: 4158
+    params:
+      params.yaml:
+        featurize.max_features: 100
+        featurize.ngrams: 1
+    outs:
+    - path: data/features
+      hash: md5
+      md5: 820664b8b793837e74ea3a5d334eb85c.dir
+      size: 1556292
+      nfiles: 2

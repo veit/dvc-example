@@ -9,3 +9,14 @@ stages:
     - prepare.split
     outs:
     - data/prepared
+  featurize:
+    cmd: uv run python src/dvc_example/featurization.py data/prepared
+      data/features
+    deps:
+    - data/prepared
+    - src/dvc_example/featurization.py
+    params:
+    - featurize.max_features
+    - featurize.ngrams
+    outs:
+    - data/features

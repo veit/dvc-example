@@ -1,3 +1,7 @@
 prepare:
   split: 0.20
   seed: 20170428
+
+featurize:
+  max_features: 100
+  ngrams: 1
