@@ -9,6 +9,8 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "dvc",
+    "dvclive",
+    "matplotlib",
     "pandas",
     "scipy",
     "scikit-learn",

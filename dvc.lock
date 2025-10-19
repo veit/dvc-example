@@ -66,3 +66,25 @@ stages:
       hash: md5
       md5: bdf0af39a42bd3fa2642eab858c45e16
       size: 1855076
+  evaluate:
+    cmd: uv run python src/dvc_example/evaluate.py model.pkl data/features
+    deps:
+    - path: data/features
+      hash: md5
+      md5: 820664b8b793837e74ea3a5d334eb85c.dir
+      size: 1556292
+      nfiles: 2
+    - path: model.pkl
+      hash: md5
+      md5: bdf0af39a42bd3fa2642eab858c45e16
+      size: 1855076
+    - path: src/dvc_example/evaluate.py
+      hash: md5
+      md5: 125a241720fa69befdb419a3b75e5bfb
+      size: 3300
+    outs:
+    - path: eval
+      hash: md5
+      md5: 0c85174459570f3d53969de97f175ff0.dir
+      size: 1339282
+      nfiles: 8
