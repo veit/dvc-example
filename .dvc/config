@@ -1,5 +1,6 @@
 [core]
     remote = local
+    analytics = false
 ['remote "local"']
     url = /Users/veit/dvc-storage
 ['remote "webserver"']
